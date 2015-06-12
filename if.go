@@ -99,6 +99,6 @@ func (ifce *Interface) SetReadDeadLine(t time.Time) error {
 }
 
 // SetWriteDeadLine sets write deadline time.
-func (ifce *Interface) SetWriteLine(t time.Time) error {
+func (ifce *Interface) SetWriteDeadLine(t time.Time) error {
 	return ifce.file.SetWriteDeadline(t)
 }
